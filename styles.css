@@ -128,7 +128,7 @@ opacity: .035;
 }
 .hero-silhouette {
   position: absolute;
-  left: 3%;
+  left: 7%;
   top: 50%;
   width: min(600px, 60vw);
   transform: translateY(-50%);
