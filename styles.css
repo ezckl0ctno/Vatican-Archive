@@ -117,7 +117,7 @@ button, input { font: inherit; }
   box-shadow: 0 0 0 80px rgba(255,255,255,.025), 0 0 0 160px rgba(255,255,255,.02);
 }
 .hero::after {
-  content: "FIDES CATHOLICA";
+  content: "IHS";
   position: absolute;
   right: 7vw;
   top: 2.5rem;
