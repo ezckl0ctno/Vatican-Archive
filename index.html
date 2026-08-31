@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An educational introduction to Roman Catholic theology, Scripture, the Catechism of the Catholic Church, and the first seven ecumenical councils." />
+  <meta name="theme-color" content="#8b0015" />
+  <title>Fides Catholica | Theology & History of the Catholic Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Fides Catholica home">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coat_of_arms_of_Vatican_City_State_-_2023_version.svg"
+          alt="Coat of arms of Vatican City State"
+          class="brand-emblem"
+          onerror="this.style.display='none';document.querySelector('.brand-fallback').style.display='grid';"
+        />
+        <span class="brand-fallback" aria-hidden="true">✠</span>
+        <span>
+          <strong>VATICAN ARCHIVE</strong>
+          <small>Theology • History • Sources</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">☰</button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <a href="#theology">Theology</a>
+        <a href="#scripture">Scripture</a>
+        <a href="#councils">Councils</a>
+        <a href="#history">History</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">A SOURCE-BASED EDUCATIONAL WEBSITE</p>
+        <h1>Explore the faith, theology, and history of the Catholic Church.</h1>
+        <p class="hero-lead">
+          A guided introduction built around the Catechism of the Catholic Church,
+          Sacred Scripture, and the Church's historical councils.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#theology">Begin the guide</a>
+          <a class="btn btn-ghost" href="#councils">View the councils</a>
+        </div>
+        <div class="hero-note">
+          <span>CCC</span>
+          Catechism paragraph numbers are supplied so readers can verify teaching in the official text.
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Vatican City State insignia">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coat_of_arms_of_Vatican_City_State_-_2023_version.svg"
+          alt="Official design of the coat of arms of Vatican City State, 2023 form"
+        />
+        <div>
+          <strong>Vatican City State</strong>
+          <p>Crossed keys beneath the papal tiara on a red field. See the official Holy See description in the sources.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="intro section">
+      <div class="section-heading">
+        <span>01 — Orientation</span>
+        <h2>How this guide is organized</h2>
+        <p>
+          The Catechism presents Catholic teaching through four major pillars: the profession of faith,
+          the sacraments, life in Christ, and Christian prayer (CCC 13–17).
+        </p>
+      </div>
+
+      <div class="pillar-grid">
+        <article class="pillar-card">
+          <div class="pillar-number">I</div>
+          <h3>The Creed</h3>
+          <p>What Catholics profess about God, creation, Jesus Christ, the Holy Spirit, and the Church.</p>
+          <a href="#creed">Explore doctrine →</a>
+        </article>
+        <article class="pillar-card">
+          <div class="pillar-number">II</div>
+          <h3>The Sacraments</h3>
+          <p>How the Church celebrates the saving work of Christ in the liturgy and seven sacraments.</p>
+          <a href="#sacraments">Explore sacraments →</a>
+        </article>
+        <article class="pillar-card">
+          <div class="pillar-number">III</div>
+          <h3>Life in Christ</h3>
+          <p>Christian moral life, grace, virtue, the Beatitudes, the Commandments, and love of neighbor.</p>
+          <a href="#life">Explore moral theology →</a>
+        </article>
+        <article class="pillar-card">
+          <div class="pillar-number">IV</div>
+          <h3>Prayer</h3>
+          <p>The Christian relationship with God, culminating in the Lord's Prayer.</p>
+          <a href="#prayer">Explore prayer →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="theology-band" id="theology">
+      <div class="section two-column">
+        <div>
+          <span class="section-kicker">02 — Catholic Theology</span>
+          <h2>One, holy, catholic, and apostolic</h2>
+          <p class="large-copy">
+            Catholic theology understands the Church as founded in Christ, animated by the Holy Spirit,
+            and marked by unity, holiness, catholicity, and apostolicity. The Catechism treats these as
+            inseparable characteristics of the Church and her mission (CCC 811–812).
+          </p>
+        </div>
+        <div class="citation-card">
+          <span class="citation-label">Catechism focus</span>
+          <strong>CCC 811–870</strong>
+          <p>The four marks of the Church; unity; holiness; catholicity; apostolicity.</p>
+          <a href="https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_three/article_9/paragraph_3_the_church_is_one%2C_holy%2C_catholic%2C_and_apostolic.html" target="_blank" rel="noopener">Read on Vatican.va ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section doctrine-section" id="creed">
+      <div class="section-heading narrow">
+        <span>Profession of Faith</span>
+        <h2>Core doctrines at a glance</h2>
+        <p>Each card gives a concise educational summary, Catechism paragraphs, and biblical references.</p>
+      </div>
+
+      <div class="doctrine-grid" id="doctrineGrid">
+        <article class="doctrine-card" data-search="trinity father son holy spirit one god matthew baptism corinthians catechism">
+          <span class="tag">Trinitarian Theology</span>
+          <h3>The Holy Trinity</h3>
+          <p>Catholic faith confesses one God in three divine Persons: Father, Son, and Holy Spirit. The Persons are distinct, yet the divine nature is one.</p>
+          <div class="ref-row"><b>CCC</b><span>232–267</span></div>
+          <div class="ref-row"><b>Scripture</b><span>Mt 28:19; 2 Cor 13:13; Jn 1:1–3</span></div>
+        </article>
+
+        <article class="doctrine-card" data-search="incarnation jesus christ word flesh true god true man john philippians">
+          <span class="tag">Christology</span>
+          <h3>The Incarnation</h3>
+          <p>The eternal Son truly became human without ceasing to be divine. Jesus Christ is one divine Person with a true divine nature and a true human nature.</p>
+          <div class="ref-row"><b>CCC</b><span>456–483</span></div>
+          <div class="ref-row"><b>Scripture</b><span>Jn 1:1, 14; Phil 2:6–8; Col 2:9</span></div>
+        </article>
+
+        <article class="doctrine-card" data-search="eucharist real presence body blood bread john 6 last supper">
+          <span class="tag">Sacramental Theology</span>
+          <h3>The Eucharist</h3>
+          <p>The Eucharist is the memorial of Christ's Passover and the sacramental making-present of his one sacrifice; Catholic teaching confesses Christ's real presence in the sacrament.</p>
+          <div class="ref-row"><b>CCC</b><span>1322–1419</span></div>
+          <div class="ref-row"><b>Scripture</b><span>Lk 22:19–20; Jn 6:51–58; 1 Cor 11:23–29</span></div>
+        </article>
+
+        <article class="doctrine-card" data-search="peter papacy keys church rock matthew 16 luke 22 john 21">
+          <span class="tag">Ecclesiology</span>
+          <h3>Petrine Ministry</h3>
+          <p>Catholic teaching sees a unique pastoral office entrusted to Peter and continued in the ministry of the Bishop of Rome, exercised within the communion of the bishops.</p>
+          <div class="ref-row"><b>CCC</b><span>880–887</span></div>
+          <div class="ref-row"><b>Scripture</b><span>Mt 16:18–19; Lk 22:31–32; Jn 21:15–17</span></div>
+        </article>
+
+        <article class="doctrine-card" data-search="mary mother god theotokos grace woman luke 1 john 19">
+          <span class="tag">Mariology</span>
+          <h3>Mary, Mother of God</h3>
+          <p>Because Jesus Christ is truly God and truly man in one Person, the Church calls Mary Theotokos—Mother of God—referring to the identity of the Person she bore.</p>
+          <div class="ref-row"><b>CCC</b><span>484–511</span></div>
+          <div class="ref-row"><b>Scripture</b><span>Lk 1:28, 35, 43; Gal 4:4</span></div>
+        </article>
+
+        <article class="doctrine-card" data-search="scripture tradition apostolic word god teaching thessalonians timothy">
+          <span class="tag">Revelation</span>
+          <h3>Scripture & Tradition</h3>
+          <p>Catholic doctrine holds Sacred Scripture and Sacred Tradition together as modes by which the apostolic deposit of faith is handed on, authentically interpreted by the Church's teaching office.</p>
+          <div class="ref-row"><b>CCC</b><span>74–100</span></div>
+          <div class="ref-row"><b>Scripture</b><span>2 Thess 2:15; 2 Tim 3:14–17; 1 Cor 11:2</span></div>
+        </article>
+      </div>
+
+      <div class="search-panel">
+        <label for="doctrineSearch">Search topics</label>
+        <div class="search-box">
+          <span>⌕</span>
+          <input id="doctrineSearch" type="search" placeholder="Try “Eucharist”, “Peter”, “Trinity”..." />
+        </div>
+      </div>
+    </section>
+
+    <section class="section sacraments-section" id="sacraments">
+      <div class="section-heading">
+        <span>03 — Sacramental Life</span>
+        <h2>The seven sacraments</h2>
+        <p>CCC 1210 groups the seven sacraments around Christian initiation, healing, and service of communion and mission.</p>
+      </div>
+
+      <div class="sacrament-groups">
+        <article>
+          <span class="group-label">Initiation</span>
+          <h3>Baptism</h3><p>CCC 1213–1284 • Mt 28:19; Jn 3:5; Acts 2:38</p>
+          <h3>Confirmation</h3><p>CCC 1285–1321 • Acts 8:14–17; Acts 19:5–6</p>
+          <h3>Eucharist</h3><p>CCC 1322–1419 • Lk 22:19–20; 1 Cor 11:23–29</p>
+        </article>
+        <article>
+          <span class="group-label">Healing</span>
+          <h3>Penance & Reconciliation</h3><p>CCC 1422–1498 • Jn 20:22–23; Jas 5:16</p>
+          <h3>Anointing of the Sick</h3><p>CCC 1499–1532 • Jas 5:14–15; Mk 6:13</p>
+        </article>
+        <article>
+          <span class="group-label">Communion & Mission</span>
+          <h3>Holy Orders</h3><p>CCC 1536–1600 • Acts 6:6; 1 Tim 4:14; 2 Tim 1:6</p>
+          <h3>Matrimony</h3><p>CCC 1601–1666 • Mt 19:4–6; Eph 5:25–32</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section life-prayer-grid">
+      <article class="feature-panel" id="life">
+        <span class="section-kicker">Life in Christ</span>
+        <h2>Faith lived through love</h2>
+        <p>
+          The Catechism's moral section considers human dignity, freedom, conscience, virtue, sin,
+          grace, the moral law, and the Ten Commandments. Christian morality is presented as a response
+          to grace and a vocation to beatitude—not merely a list of rules.
+        </p>
+        <div class="mini-refs">
+          <span>CCC 1691–2557</span><span>Mt 5–7</span><span>Mt 22:37–40</span><span>Rom 12:1–2</span>
+        </div>
+      </article>
+
+      <article class="feature-panel light" id="prayer">
+        <span class="section-kicker">Christian Prayer</span>
+        <h2>A living relationship with God</h2>
+        <p>
+          The Catechism describes prayer as central to Christian life and treats its forms, sources,
+          difficulties, and the Lord's Prayer. It identifies vocal prayer, meditation, and contemplative
+          prayer as major expressions of the tradition.
+        </p>
+        <div class="mini-refs">
+          <span>CCC 2558–2865</span><span>Mt 6:9–13</span><span>Rom 8:26</span><span>1 Thess 5:17</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="councils-section" id="councils">
+      <div class="section councils-inner">
+        <div class="section-heading council-heading">
+          <span>04 — Historical Theology</span>
+          <h2>The first seven ecumenical councils</h2>
+          <p>
+            These councils were decisive and crucial as is was the foundation of Trinitarian theology, Christology, and the theology of sacred images.
+            Select a council to expand its historical context, doctrinal issue, and sources.
+          </p>
+        </div>
+
+        <div class="timeline" id="councilTimeline">
+          <article class="council active">
+            <button class="council-head" aria-expanded="true">
+              <span class="year">325</span>
+              <span><b>I. Nicaea I</b><small>Nicaea, Bithynia</small></span>
+              <span class="plus">−</span>
+            </button>
+            <div class="council-body">
+              <p><b>Central controversy:</b> Arian teaching concerning the Son's relation to the Father.</p>
+              <p><b>Doctrinal importance:</b> The council confessed the Son as truly divine and “consubstantial” (homoousios) with the Father, forming the foundational Nicene creed.</p>
+              <p><b>Biblical frame:</b> Jn 1:1–3; Jn 10:30; Col 1:15–20; Heb 1:1–4.</p>
+              <p><b>Historical references:</b> Vatican CTI, <i>Jesus Christ, Son of God, Savior: 1700th Anniversary of Nicaea</i> (2025); CCC 465.</p>
+            </div>
+          </article>
+
+          <article class="council">
+            <button class="council-head" aria-expanded="false">
+              <span class="year">381</span>
+              <span><b>II. Constantinople I</b><small>Constantinople</small></span>
+              <span class="plus">+</span>
+            </button>
+            <div class="council-body">
+              <p><b>Central controversy:</b> Continuing Trinitarian disputes, especially denial of the full divinity of the Holy Spirit.</p>
+              <p><b>Doctrinal importance:</b> It reaffirmed the Nicene faith and articulated the Church's confession of the Holy Spirit as Lord and giver of life.</p>
+              <p><b>Biblical frame:</b> Mt 28:19; Acts 5:3–4; 1 Cor 2:10–11; 2 Cor 13:13.</p>
+              <p><b>Historical references:</b> John Paul II, <i>A Concilio Constantinopolitano I</i> (1981); Vatican CTI, <i>Theology Today</i> §25.</p>
+            </div>
+          </article>
+
+          <article class="council">
+            <button class="council-head" aria-expanded="false">
+              <span class="year">431</span>
+              <span><b>III. Ephesus</b><small>Ephesus</small></span>
+              <span class="plus">+</span>
+            </button>
+            <div class="council-body">
+              <p><b>Central controversy:</b> How Christ's divinity and humanity are united, and whether Mary may rightly be called Theotokos (“God-bearer” / Mother of God).</p>
+              <p><b>Doctrinal importance:</b> The council defended the unity of Christ's Person and upheld the title Theotokos as a Christological confession.</p>
+              <p><b>Biblical frame:</b> Jn 1:14; Lk 1:35, 43; Gal 4:4.</p>
+              <p><b>Historical references:</b> John Paul II, <i>A Concilio Constantinopolitano I</i> (also commemorating Ephesus); CCC 466.</p>
+            </div>
+          </article>
+
+          <article class="council">
+            <button class="council-head" aria-expanded="false">
+              <span class="year">451</span>
+              <span><b>IV. Chalcedon</b><small>Chalcedon</small></span>
+              <span class="plus">+</span>
+            </button>
+            <div class="council-body">
+              <p><b>Central controversy:</b> The relation between Christ's divine and human natures after the Incarnation.</p>
+              <p><b>Doctrinal importance:</b> Chalcedon confessed one and the same Christ in two natures, divine and human, united in one Person without confusion or division.</p>
+              <p><b>Biblical frame:</b> Jn 1:1, 14; Phil 2:6–8; Heb 2:14–17.</p>
+              <p><b>Historical references:</b> Pius XII, <i>Sempiternus Rex Christus</i> (1951); CCC 467.</p>
+            </div>
+          </article>
+
+          <article class="council">
+            <button class="council-head" aria-expanded="false">
+              <span class="year">553</span>
+              <span><b>V. Constantinople II</b><small>Constantinople</small></span>
+              <span class="plus">+</span>
+            </button>
+            <div class="council-body">
+              <p><b>Central controversy:</b> Continuing disputes over how Chalcedon's Christology should be interpreted, especially the “Three Chapters.”</p>
+              <p><b>Doctrinal importance:</b> The council reaffirmed the unity of the divine Person of Christ and sought to protect an orthodox reading of Chalcedon.</p>
+              <p><b>Biblical frame:</b> Jn 1:14; Col 2:9; 1 Tim 2:5.</p>
+              <p><b>Historical references:</b> Vatican CTI, <i>Theology Today</i> §25; CCC 468.</p>
+            </div>
+          </article>
+
+          <article class="council">
+            <button class="council-head" aria-expanded="false">
+              <span class="year">680–681</span>
+              <span><b>VI. Constantinople III</b><small>Constantinople</small></span>
+              <span class="plus">+</span>
+            </button>
+            <div class="council-body">
+              <p><b>Central controversy:</b> Monothelitism—the claim that Christ has only one will.</p>
+              <p><b>Doctrinal importance:</b> The council taught that Christ possesses a divine will and a human will, corresponding to his two natures, with the human will freely harmonious with the divine.</p>
+              <p><b>Biblical frame:</b> Lk 22:42; Jn 6:38; Heb 10:5–10.</p>
+              <p><b>Historical references:</b> Vatican International Theological Commission, <i>Select Questions on Christology</i> (1979); CCC 475.</p>
+            </div>
+          </article>
+
+          <article class="council">
+            <button class="council-head" aria-expanded="false">
+              <span class="year">787</span>
+              <span><b>VII. Nicaea II</b><small>Nicaea</small></span>
+              <span class="plus">+</span>
+            </button>
+            <div class="council-body">
+              <p><b>Central controversy:</b> Iconoclasm and the legitimacy of sacred images.</p>
+              <p><b>Doctrinal importance:</b> The council defended the veneration of sacred images while distinguishing veneration from the adoration owed to God alone; its Christological logic rests on the reality of the Incarnation.</p>
+              <p><b>Biblical frame:</b> Col 1:15; Jn 1:14; Ex 25:18–22 (sacred imagery); distinction from idolatry: Ex 20:4–5.</p>
+              <p><b>Historical references:</b> John Paul II, <i>Duodecimum Saeculum</i> (1987); CCC 476–477, 1159–1162.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section history-section" id="history">
+      <div class="section-heading narrow">
+        <span>05 — Historical Map</span>
+        <h2>From the apostolic Church to Vatican City</h2>
+        <p>A compact orientation to major periods. This is not intended as a complete history of Christianity.</p>
+      </div>
+
+      <div class="history-track">
+        <article><span>c. 30–100</span><h3>Apostolic Age</h3><p>The Christian proclamation spreads from Jerusalem throughout the Roman world. Acts and the New Testament letters witness to early communities, bishops/overseers, presbyters, deacons, sacraments, and apostolic teaching.</p></article>
+        <article><span>2nd–3rd c.</span><h3>Early Fathers</h3><p>Writers such as Ignatius of Antioch, Justin Martyr, Irenaeus, Tertullian, Cyprian, and others testify to developing theological vocabulary and ecclesial structures.</p></article>
+        <article><span>4th–8th c.</span><h3>Patristic Councils</h3><p>The first seven ecumenical councils clarify Trinitarian and Christological doctrine and address the theology of sacred images.</p></article>
+        <article><span>1054 onward</span><h3>East–West Separation</h3><p>Longstanding theological, political, cultural, and jurisdictional tensions culminate in deep separation between Rome and Constantinople, though the history is more complex than a single date.</p></article>
+        <article><span>16th c.</span><h3>Reformation & Trent</h3><p>Western Christianity experiences major rupture. The Council of Trent responds doctrinally and reforms aspects of Catholic discipline and clerical formation.</p></article>
+        <article><span>1869–1870</span><h3>Vatican I</h3><p>The council addresses faith and reason and defines papal primacy and papal infallibility under specific conditions.</p></article>
+        <article><span>1929</span><h3>Vatican City State</h3><p>The Lateran Treaty establishes Vatican City State as a sovereign entity distinct from, and serving the independence of, the Holy See.</p></article>
+        <article><span>1962–1965</span><h3>Vatican II</h3><p>The council issues major constitutions and decrees on the Church, revelation, liturgy, the modern world, ecumenism, religious liberty, and more.</p></article>
+      </div>
+    </section>
+
+    <section class="sources-section" id="sources">
+      <div class="section sources-inner">
+        <div class="section-heading">
+          <span>06 — Verify the Sources</span>
+          <h2>Primary and official references</h2>
+          <p>Use these links to read beyond the summaries on this site.</p>
+        </div>
+
+        <div class="source-grid">
+          <a class="source-card" href="https://www.vatican.va/content/catechism/en.html" target="_blank" rel="noopener">
+            <span>PRIMARY</span><h3>Catechism of the Catholic Church</h3><p>Official English text on Vatican.va.</p>
+          </a>
+          <a class="source-card" href="https://www.vatican.va/content/catechism/en/prologue/iv_structure_of_this_catechism.html" target="_blank" rel="noopener">
+            <span>CCC 13–17</span><h3>Structure of the Catechism</h3><p>The Creed, Sacraments, Life in Christ, and Prayer.</p>
+          </a>
+          <a class="source-card" href="https://www.vatican.va/roman_curia/secretariat_state/documents/insigne/sp_ss_scv_stemma-bandiera-sigillo_en.html" target="_blank" rel="noopener">
+            <span>INSIGNIA</span><h3>Vatican City State Coat of Arms</h3><p>Official Holy See description of the insignia and its symbolism.</p>
+          </a>
+          <a class="source-card" href="https://www.vatican.va/roman_curia/congregations/cfaith/cti_documents/rc_cti_doc_20111129_teologia-oggi_en.html" target="_blank" rel="noopener">
+            <span>HISTORY</span><h3>Theology Today</h3><p>Vatican International Theological Commission; names the seven early ecumenical councils.</p>
+          </a>
+          <a class="source-card" href="https://www.vatican.va/roman_curia/congregations/cfaith/cti_documents/rc_cti_doc_20250403_1700-nicea_en.html" target="_blank" rel="noopener">
+            <span>NICAEA</span><h3>1700th Anniversary of Nicaea</h3><p>International Theological Commission study of Nicaea and its reception.</p>
+          </a>
+          <a class="source-card" href="https://www.vatican.va/content/john-paul-ii/en/apost_letters/1987/documents/hf_jp-ii_apl_19871204_duodecim-saeculum.html" target="_blank" rel="noopener">
+            <span>NICAEA II</span><h3>Duodecimum Saeculum</h3><p>John Paul II on the seventh ecumenical council and sacred images.</p>
+          </a>
+        </div>
+
+        <div class="editorial-note">
+          <strong>Editorial note</strong>
+          <p>
+            This website is an independent educational website, not an official website of the Holy See or Vatican City State.
+            Catechism material is summarized and cited by paragraph number. Short phrases are used only where necessary for explanation.
+            Readers should consult the official reference for full wording and context.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>VATICAN ARCHIVE</strong>
+        <p>An educational guide of Roman Catholic theology and history.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#top">Back to top ↑</a>
+        <a href="https://www.vatican.va/" target="_blank" rel="noopener">Vatican.va ↗</a>
+      </div>
+      <p class="copyright">Built by ezckl.ctno. For information and source verification. <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
