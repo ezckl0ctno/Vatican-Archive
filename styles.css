@@ -127,6 +127,22 @@ button, input { font: inherit; }
   letter-spacing: -.08em;
   opacity: .035;
 }
+.hero-silhouette {
+  position: absolute;
+  width: min(700px, 60vw);
+  height: min(700px, 60vw);
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("https://commons.wikipedia.org/wiki/Special:Redirect/file/Coat_of_arms_of_Vatican_City_State_-_2023_version.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.08;
+  filter: brightness(0) invert(1);
+  pointer-events: none;
+  z-index: 1;
+}
 .hero-content { position: relative; z-index: 2; max-width: 760px; }
 .eyebrow, .section-kicker {
   color: #efcf7a;
