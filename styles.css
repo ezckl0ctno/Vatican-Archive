@@ -129,11 +129,11 @@ button, input { font: inherit; }
 }
 .hero-silhouette {
   position: absolute;
-  left: 7%;
-  top: 50%;
-  width: min(520px, 42vw);
+  left: 8%;
+  top: 60%;
+  width: min(430px, 32vw);
   transform: translateY(-50%);
-  opacity: 0.10;
+  opacity: 0.14;
   pointer-events: none;
   z-index: 1;
 }
@@ -142,7 +142,7 @@ button, input { font: inherit; }
   width: 100%;
   height: auto;
   display: block;
-  filter: none;
+  filter: greyscale(10) brightness(0) invert(1);
 }
 .hero-content { position: relative; z-index: 2; max-width: 760px; }
 .eyebrow, .section-kicker {
@@ -193,7 +193,7 @@ button, input { font: inherit; }
   width: 190px; height: 210px; object-fit: contain;
   margin: 0 auto 24px;
 }
-.hero-card strong { font-family: var(--serif); color: var(--red-900); font-size: 1.4rem; }
+.hero-card strong { font-family: var(--serif); color: var(--red-900); font-size: 1.45rem; }
 .hero-card p { margin-bottom: 0; color: var(--muted); font-size: .88rem; }
 
 .section { width: min(1180px, calc(100% - 40px)); margin: auto; padding: 100px 0; }
